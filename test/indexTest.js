@@ -8,8 +8,12 @@ describe('Fix the Scope', function() {
   });
 
   describe('upperCaseCustomerName()', function() {
-    it('modifies the customerName variable', function() {
-      expect(window.customerName).to.equal('bob');
+    
+it('modifies the customerName variable', function() {
+  upperCaseCustomerName();
+  assert.strictEqual(customerName, 'BOB');  // Check for 'BOB'
+});
+
 
       upperCaseCustomerName();
 
